@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+		body{
+		margin:0;
+		background-color: #71d7d7;
+		}
+
+		#menu ul{
+			margin: 0;
+			background-color: #0d97f4;
+			list-style: none;
+		}
+		
+		#menu ul li{
+			display: inline;
+		}
+		
+		#menu ul li a{
+			padding: 10px 10px;
+			display: inline-block;
+			color: white;
+			text-decoration: none;
+		}
+		
+		#menu ul li a:hover{
+			color: #0460b3;
+		}
+		.borda
+		{
+			background-color: white;
+			width: 400px;
+			text-align: center;
+			border: 5px solid #0460b3;
+		}
+	</style>
+</head>
+
+<body>
+<div style="background-color:#0460b3;">
+
+<img src = "IMG\pergunta.jpg" alt = "Imagem 01_ERRO" style = "width: 1024px; height: 300px;"> 
+
+<div id="menu">
+<ul>
+
+<li><a href = "file:///C:/Users/REGI/Desktop/PWI/home.html"> Home </a></li>
+<li><a href = "file:///C:/Users/REGI/Desktop/PWI/Jogos.html"> Jogos Preferidos </a></li>
+<li><a href = "file:///C:/Users/REGI/Desktop/PWI/animais.html"> Animais Preferidos </a></li>
+<li><a href = "file:///C:/Users/REGI/Desktop/PWI/Comida.html"> Comidas Preferidas </a></li>
+<li><a href = "file:///C:/Users/REGI/Desktop/PWI/estudos.html"> Estudos Preferidos </a></li>
+<li><a href = "file:///C:/Users/REGI/Desktop/PWI/creditos.html"> Créditos </a></li>
+
+</ul>
+</div>
+
+</div>
+
+<h2 style="color:#00274a; font-family:fantasy"> Quem é o Criador? </h2>
+<div style="color:#00274a;">
+<p id="demo2">
+Você deve ter vindo aqui para saber quem foi a pessoa que construiu este site...</br>
+Tendo essa informação em mente pensei, "por que não fazer uma charada?"</br>
+Acima você terá que digitar uma senha que te levará diretamente...</br>
+Para a toca do coelho...Mas para facilitar a sua vida, vou te dar uma dica...</br>
+Volta para a primeira página...</br>
+<b>"Eu só posso lhe mostrar a porta.</br>
+Você tem que atravessá-la." Morpheus<b> 
+</p>
+</div>
+
+
+<div id="demo1" style="display: none;" class="borda">
+
+<p>
+</br>
+Meu nome é Lucas,</br>
+sou aluno da Etec Professor Horácio Augusto da Silveira.</br>
+Esta atividade foi disponibilizada pelos professores: </br>
+Quitéria e Moisés, da disciplina de Prog. Web I.</br>
+*Nesta página usei um pouco de java script*</br>
+Espero que tenha gostado</br>
+Boas Férias a todos!!!</br>
+</p>
+
+<img src = "IMG\coelho_cenoura.gif" alt = "Gif_ERRO" style="width: 400px; height: 400px;">
+
+</div>
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script>
+	
+	var senha;
+	senha = prompt('Qual é a senha?');
+	
+	if(senha == 54812036)
+	{
+		alert("SENHA CORRETA");
+		document.getElementById('demo1').style.display='block';
+		document.getElementById('demo2').style.display='none';
+	}
+	else
+	{
+		alert('SENHA INCORRETA');
+	}
+	
+</script>
+</body>
+</html>
